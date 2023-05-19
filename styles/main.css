@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.margin--top {
+    margin-top: 24px;
+}
+
+html,
+body {
+    background-color: #dfe7fe;
+    font-family: 'Red Hat Display', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    width: 292px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__image {
+    border-radius: 17px 17px 0 0;
+    max-width: 100%;
+}
+
+.container-text {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 83.33%;
+}
+
+.container-text__heading {
+    color: hsl(223, 47%, 23%);
+    font-weight: 800;
+}
+
+.container-text__copy {
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+}
+
+.container-plan__heading {
+    color: hsl(223, 47%, 23%);
+    font-size: 15px;
+}
+
+.container-plan__price {
+    color: hsl(224, 23%, 55%);
+    font-size: 15px;
+}
+
+.container-plan {
+    align-items: center;
+    background-color: #9abbb7;
+    border-radius: 12px;
+    background: url(../images/icon-music.svg);
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    width: 83.33%;
+}
+
+.container-plan__heading {
+    grid-column: 2;
+}
+
+.container-plan__link {
+    color: #382ae1;
+    font-size: 13px;
+    font-weight: 700;
+    grid-column: 3;
+    justify-self: flex-end;
+    text-decoration: underline;
+}
+
+.container-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-btn__payment {
+    background-color: #382ae1;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    padding: .75rem 2.80rem;
+}
+
+.container-btn__cancel {
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
